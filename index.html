@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width user-scalable=yes">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link rel="stylesheet" type="text/css" href="style/icons.css"/>
+   <link rel="stylesheet" type="text/css" href="style/principal.css"/>
+   <link rel="stylesheet" type="text/css" href="style/header.css"/>
+   <link rel="stylesheet" type="text/css" href="style/toolbar.css"/>
+   <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+   <link rel="stylesheet" type="text/css" href="style/menuaction.css"/>
+   <link rel="stylesheet" type="text/css" href="style/menulist.css"/>
+   <link rel="stylesheet" type="text/css" href="style/pagebody.css"/>
+   <script type="text/javascript" src="js/temporary.js"></script>
+   <script type="text/javascript" src="js/dispatcher.js"></script>
+   <script type="text/javascript" src="js/install.js"></script>
+   <script type="text/javascript" src="js/toolbar.js"></script>
+   <script type="text/javascript" src="js/sidebar.js"></script>
+   <script type="text/javascript" src="js/menuaction.js"></script>
+   <script type="text/javascript" src="js/menulist.js"></script>
+   <script type="text/javascript" src="js/pagebody.js"></script>
+     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/calculator.js"></script>
+   <title>MTA Bonus Calculator</title>
+</head>
+<body>
+   <section class="principal">
+      <header>
+        <button id="sidebar_trigger" class="icon menu"></button>
+        <h1>MTA Bonus Calculator</h1>
+        <!-- <ul>
+           <li id="menuaction_trigger" class="icon edit_contact"/>
+           <li id="install">Install</li>
+        </ul> -->
+      </header>
+
+      <div id="page0" class="pagebody" aria-owns="tb0" aria-expanded="true">
+         <!-- Junkyard, only for the sake of the example - NOT for real use -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+         <h2>Bonus Freeride Calculator</h2>
+         <p>Calculate how much you need to recharge your MTA MetroCard to get a bonus free ride
+         <!-- <br/>Activate the others by pressing the toolbar's items. --></p>
+         <form>
+    <table>
+      <tr>
+        <td> Current Balance: $ </td>
+        <td><input id="currentBal" type="text" value ="0" title="How much money is currently on your Metrocard?"/></td>
+      </tr>
+      <tr>
+        <td> Maximum to Add: $</td>
+        <td><input id="maxToAdd" type="text" value = "40" title="What is the maximum amount that you want to add?"/></td>
+      </tr>
+      <tr>
+        <td>Fare: </td>
+        <td>
+          <select id="farePrices">
+            <option value=1.25>$1.25 (Reduced Fare)</option>
+            <option selected='selected' value=2.50>$2.50 (Regular Fare)</option>
+            <option value=3.00>$3.00 (Senior Express Bus)</option>
+            <option value=6.00>$6.00 (Express Bus)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="calc">Calculate</button><button id="reset" type="reset" value="Reset">Reset Form</button></td>
+      </tr>
+    </table>
+  </form>
+    <ul class="results">
+         </div>
+         <!-- End of Junkyard - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+
+
+      <footer class="toolbar">
+         <menu id="tb0" type="toolbar" aria-expanded="true">
+            
+            <li aria-controls="page2"><a href="mailto:karanjai.moz@gmail.com?subject=MTA Fare App Feedback">Feedback</li>
+         </menu>
+         
+      </footer>
+   </section>
+
+   <!-- <section class="sidebar">
+      <header><h2>Help</h2></header>
+      <div class="menulist">
+         <menu type="popup" label="More about MTA">
+            <menuitem type="link" label="I 1"></menuitem>
+            <menuitem type="checkbox" label="I 2"></menuitem>
+            <menuitem type="checkbox" label="I 3"></menuitem>
+         </menu>
+         <menu type="popup" label="Menu II">
+            <menuitem type="checkbox" label="II 1"></menuitem>
+            <menu label="Menu II 2">
+              <menuitem type="checkbox" label="II 2.a"></menuitem>
+              <menu label="Menu II 2.b">
+                 <menuitem type="radio" radiogroup="grp1" label="hot"></menuitem>
+                 <menuitem type="radio" radiogroup="grp2" label="red"></menuitem>
+                 <menuitem type="radio" radiogroup="grp1" label="cold"></menuitem>
+                 <menuitem type="radio" radiogroup="grp2" label="blue"></menuitem>
+                 <menuitem type="radio" radiogroup="grp2" label="yellow"></menuitem>
+                 <menuitem type="radio" radiogroup="grp1" label="tepid"></menuitem>
+              </menu>
+              <menuitem type="checkbox" label="II 2.c"></menuitem>
+              <menuitem type="checkbox" label="II 2.d"></menuitem>
+            </menu>
+            <menuitem type="checkbox" label="II 3"></menuitem>
+         </menu>
+      </div>
+   </section> -->
+
+<!--    <section class="menuaction">
+      <header><h2>Actions Title</h2></header>
+      <menu type="popup">
+         <menuitem label="Action 1" icon="actionLogo.png"></menuitem>
+         <menuitem label="Action 2"></menuitem>
+         <menuitem label="Action 3"></menuitem>
+      </menu>
+      <footer><button>Cancel</button></footer>
+   </section> -->
+</body>
+</html>

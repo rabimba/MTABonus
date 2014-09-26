@@ -1,0 +1,19 @@
+{
+  "name": "MTABonus Calculator",
+  "version": "1.0",
+  "description": "Calculate how much amount you have to refill/recharge your MTA Cahscard to get free ride fomr the bonus amount you get.",
+  "launch_path": "/index.html",
+  "orientation": "portrait",
+  "icons": {
+    "32": "/images/logo16.png",
+    "48": "/images/logo32.png",
+    "64": "/images/logo64.png",
+    "128": "/images/logo128.png"
+  },
+  "developer": {
+    "name": "Rabimba Karanjai",
+    "url": "http://rabimba.com"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
